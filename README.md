@@ -12,17 +12,20 @@ _**NOTE:** Operator is platform-independent, that is why there is a unified inst
 
 Additionally, there is the ability to use the custom components and afterwards consume the respective component data from Admin Console. 
 
-The basic Custom Resource for EDP Component can be as follows:
+The basic Custom Resource for EDP Component can be as follows ([epd_components_crd.yaml](deploy-templates/crds/v1.edp.epam.com_edpcomponents_crd.yaml)):
+
 ```yaml
 apiVersion: v1.edp.epam.com/v1alpha1
 kind: EDPComponent
 metadata:
   name: example-edpcomponent
 spec:
-  type: jenkins
+  type: visible
   url: https://example-jenkins
   icon: base64encoded_icon
 ```
+
+For example: [docker-registry.yaml](documentation/docker-registry.yaml), [kubernetes.yaml](documentation/kubernetes.yaml)
 
 _**NOTE:** Pay attention to the icon field that should be a base64 encoded._
 
@@ -46,7 +49,7 @@ In order to install the EDP Component Operator, follow the steps below:
      ```bash
      helm search repo epamedp/edp-component-operator
      NAME                            CHART VERSION   APP VERSION     DESCRIPTION
-     epamedp/edp-component-operator  0.2.0    
+     epamedp/edp-component-operator  0.5.0    
      ```
   
     _**NOTE:** It is highly recommended to use the latest released version._

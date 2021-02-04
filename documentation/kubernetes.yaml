@@ -1,0 +1,9 @@
+apiVersion: v1.edp.epam.com/v1alpha1
+kind: EDPComponent
+metadata:
+  name: kubernetes
+spec:
+  type: kubernetes
+  url: https://console.*.aws.*.com
+  visible: true
+  icon: base64encoded_icon

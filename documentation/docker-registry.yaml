@@ -1,0 +1,9 @@
+apiVersion: v1.edp.epam.com/v1alpha1
+kind: EDPComponent
+metadata:
+  name: docker-registry
+spec:
+  type: docker-registry
+  url: *.ecr.eu-central-1.amazonaws.com
+  visible: true
+  icon: base64encoded_icon
