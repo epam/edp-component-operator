@@ -31,7 +31,7 @@ _**NOTE:** Pay attention to the icon field that should be a base64 encoded._
 
 As soon as the CR is created, it will appear on the main page of the Admin Console tool:
 
-![admin-console](readme-resource/admin_console_main_page.png "admin-console")
+![admin-console](readme-resource/admin_console_main.png "admin-console")
 
 ## Prerequisites
 1. Linux machine or Windows Subsystem for Linux instance with [Helm 3](https://helm.sh/docs/intro/install/) installed;
