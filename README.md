@@ -20,9 +20,11 @@ kind: EDPComponent
 metadata:
   name: example-edpcomponent
 spec:
-  type: visible
+  type: example-edpcomponent
   url: https://example-jenkins
   icon: base64encoded_icon
+  visible: true   # ensures whether the component is visible on the Admin Console Overview page or not
+
 ```
 
 For example: [docker-registry.yaml](documentation/docker-registry.yaml), [kubernetes.yaml](documentation/kubernetes.yaml)
