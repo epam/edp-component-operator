@@ -1,7 +1,7 @@
 package client
 
 import (
-	"github.com/epmd-edp/edp-component-operator/pkg/apis/v1/v1alpha1"
+	"github.com/epam/edp-component-operator/v1/pkg/apis/v1/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
@@ -39,7 +39,7 @@ func setConfigDefault(cfg *rest.Config) error {
 	cfg.GroupVersion = &SchemeGroupVersion
 	cfg.APIPath = "/apis"
 	cfg.ContentType = runtime.ContentTypeJSON
-	cfg.NegotiatedSerializer = serializer.DirectCodecFactory{CodecFactory: serializer.NewCodecFactory(scheme)}
+	cfg.NegotiatedSerializer = serializer.NewCodecFactory(scheme)
 	return nil
 }
 

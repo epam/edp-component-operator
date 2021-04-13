@@ -1,7 +1,8 @@
 package client
 
 import (
-	"github.com/epmd-edp/edp-component-operator/pkg/apis/v1/v1alpha1"
+	"context"
+	"github.com/epam/edp-component-operator/v1/pkg/apis/v1/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
@@ -30,7 +31,7 @@ func (e edpComponents) Create(c *v1alpha1.EDPComponent) (res *v1alpha1.EDPCompon
 		Namespace(e.ns).
 		Resource("edpcomponents").
 		Body(c).
-		Do().
+		Do(context.TODO()).
 		Into(res)
 	return
 }
@@ -42,7 +43,7 @@ func (e edpComponents) Get(name string, options metav1.GetOptions) (res *v1alpha
 		Resource("edpcomponents").
 		Name(name).
 		VersionedParams(&options, scheme.ParameterCodec).
-		Do().
+		Do(context.TODO()).
 		Into(res)
 	return
 }
