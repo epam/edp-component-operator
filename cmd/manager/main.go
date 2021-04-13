@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/epam/edp-component-operator/v1/pkg/apis/v1/v1alpha1"
+	"github.com/epam/edp-component-operator/pkg/apis/v1/v1alpha1"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/client-go/rest"
 	"os"

@@ -1,4 +1,4 @@
-module github.com/epam/edp-component-operator/v1
+module github.com/epam/edp-component-operator
 
 go 1.14
 

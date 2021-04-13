@@ -2,7 +2,7 @@ package client
 
 import (
 	"context"
-	"github.com/epam/edp-component-operator/v1/pkg/apis/v1/v1alpha1"
+	"github.com/epam/edp-component-operator/pkg/apis/v1/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
