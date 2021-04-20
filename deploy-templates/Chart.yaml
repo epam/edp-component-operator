@@ -3,8 +3,8 @@ description: A Helm chart for EDP Component Operator
 home: https://solutionshub.epam.com/solution/epam-delivery-platform
 name: edp-component-operator
 type: application
-version: 0.6.0
-appVersion: v0.6.0
+version: 0.6.1
+appVersion: v0.6.1
 maintainers:
   - name: EPAM EDP Team
 sources:
