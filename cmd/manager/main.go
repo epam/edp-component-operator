@@ -24,14 +24,10 @@ var (
 	setupLog = ctrl.Log.WithName("setup")
 )
 
-const keycloakOperatorLock = "keycloak-operator-lock"
-
 func init() {
 	utilruntime.Must(clientgoscheme.AddToScheme(scheme))
 
 	utilruntime.Must(v1alpha1.AddToScheme(scheme))
-
-	//+kubebuilder:scaffold:scheme
 }
 
 func main() {
