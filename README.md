@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/epam/edp-component-operator/branch/master/graph/badge.svg?token=88JVA1GA73)](https://codecov.io/gh/epam/edp-component-operator)
+
 # EDP Component Operator
 
 | :heavy_exclamation_mark: Please refer to [EDP documentation](https://epam.github.io/edp-install/) to get the notion of the main concepts and guidelines. |
