@@ -50,7 +50,7 @@ func main() {
 
 	ctrl.SetLogger(zap.New(zap.UseFlagOptions(&opts)))
 
-	setupLog.Info("Starting the CD Pipeline Operator",
+	setupLog.Info("Starting the EDP Component Operator",
 		"version", v.Version,
 		"git-commit", v.GitCommit,
 		"git-tag", v.GitTag,

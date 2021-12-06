@@ -6,7 +6,7 @@ info:
 
 options:
   tag_filter_pattern: '^v'
-  sort: "date"
+  sort: "semVer"
 
   commits:
     filters:
@@ -21,20 +21,22 @@ options:
 
   commit_groups:
     group_by: Type
-    sort_by: Title
+    sort_by: Custom
     title_order:
+      - chore
+      - docs
       - feat
       - fix
       - refactor
+      - style
       - test
-      - chore
-      - docs
     title_maps:
       chore: Routine
       docs: Documentation
       feat: Features
       fix: Bug Fixes
       refactor: Code Refactoring
+      style: Formatting
       test: Testing
 
   header:
