@@ -1,6 +1,14 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Routine
+
+- Update release CI pipelines [EPMDEDP-7847](https://jiraeu.epam.com/browse/EPMDEDP-7847)
+
+### Code Refactoring
+
+- Remove unused Dockerfile [EPMDEDP-7998](https://jiraeu.epam.com/browse/EPMDEDP-7998)
+
 
 <a name="v0.10.0"></a>
 ## [v0.10.0] - 2021-12-06
