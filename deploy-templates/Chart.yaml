@@ -1,11 +1,70 @@
 apiVersion: v2
 description: A Helm chart for EDP Component Operator
-home: https://solutionshub.epam.com/solution/epam-delivery-platform
+home: https://epam.github.io/edp-install/
 name: edp-component-operator
 type: application
 version: 0.10.0-SNAPSHOT
 appVersion: 0.10.0-SNAPSHOT
+icon: https://epam.github.io/edp-install/assets/logo.png
+keywords:
+  - edp
+  - component
+  - operator
 maintainers:
-  - name: EPAM EDP Team
+  - name: epmd-edp
+    email: SupportEPMD-EDP@epam.com
+    url: https://solutionshub.epam.com/solution/epam-delivery-platform
+  - name: sergk
+    url: https://github.com/SergK
 sources:
   - https://github.com/epam/edp-component-operator
+annotations:
+  artifacthub.io/license: Apache-2.0
+  artifacthub.io/operator: "true"
+  artifacthub.io/operatorCapabilities: Full Lifecycle
+  artifacthub.io/crds: |
+    - kind: EDPComponent
+      version: v2.edp.epam.com/v1alpha1
+      name: edpcomponent
+      displayName: EDPComponent
+      description: Manages components of the EDP platform
+  artifacthub.io/crdsExamples: |
+    - apiVersion: v1.edp.epam.com/v1alpha1
+      kind: EDPComponent
+      metadata:
+        name: docker-registry
+      spec:
+        icon: hash
+        type: docker-registry
+        url: docker.io
+        visible: true
+    - apiVersion: v1.edp.epam.com/v1alpha1
+      kind: EDPComponent
+        name: edp-admin-console
+      spec:
+        icon: hash
+        type: admin-console
+        url: https://edp-admin-console.example.com
+        visible: true
+    - apiVersion: v1.edp.epam.com/v1alpha1
+      kind: EDPComponent
+      metadata:
+        name: test-jira
+      spec:
+        icon: hash
+        type: jira
+        url: https://jiraeu.example.com
+        visible: true
+    - apiVersion: v1.edp.epam.com/v1alpha1
+      kind: EDPComponent
+        name: gerrit
+      spec:
+        icon: hash
+        type: gerrit
+        url: https://gerrit.example.com
+        visible: true
+  artifacthub.io/links: |
+    - name: EDP Documentation
+      url: https://epam.github.io/edp-install/
+    - name: EPAM SolutionHub
+      url: https://solutionshub.epam.com/solution/epam-delivery-platform
