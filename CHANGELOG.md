@@ -4,6 +4,19 @@
 ### Routine
 
 - Update release CI pipelines [EPMDEDP-7847](https://jiraeu.epam.com/browse/EPMDEDP-7847)
+- Populate chart with Artifacthub annotations [EPMDEDP-8049](https://jiraeu.epam.com/browse/EPMDEDP-8049)
+- Update changelog [EPMDEDP-8227](https://jiraeu.epam.com/browse/EPMDEDP-8227)
+- Update current development version [EPMDEDP-8468](https://jiraeu.epam.com/browse/EPMDEDP-8468)
+
+### Features
+
+- Update Makefile changelog target [EPMDEDP-8218](https://jiraeu.epam.com/browse/EPMDEDP-8218)
+- Generate CRDs and helm docs automatically [EPMDEDP-8385](https://jiraeu.epam.com/browse/EPMDEDP-8385)
+
+### Bug Fixes
+
+- Fix artifacthub.io crds tag [EPMDEDP-8386](https://jiraeu.epam.com/browse/EPMDEDP-8386)
+- Fix changelog generation in GH Release Action [EPMDEDP-8468](https://jiraeu.epam.com/browse/EPMDEDP-8468)
 
 ### Code Refactoring
 
@@ -40,19 +53,8 @@
 <a name="v0.7.0"></a>
 ## [v0.7.0] - 2021-12-03
 
-<a name="v0.1.0"></a>
-## [v0.1.0] - 2020-01-15
-
-<a name="v0.1.0-3"></a>
-## [v0.1.0-3] - 2020-01-21
-
-<a name="v0.0.1-2"></a>
-## v0.0.1-2 - 2019-10-30
-
 [Unreleased]: https://github.com/epam/edp-component-operator/compare/v0.10.0...HEAD
 [v0.10.0]: https://github.com/epam/edp-component-operator/compare/v0.9.0...v0.10.0
 [v0.9.0]: https://github.com/epam/edp-component-operator/compare/v0.8.0...v0.9.0
 [v0.8.0]: https://github.com/epam/edp-component-operator/compare/v0.7.0...v0.8.0
 [v0.7.0]: https://github.com/epam/edp-component-operator/compare/v0.1.0...v0.7.0
-[v0.1.0]: https://github.com/epam/edp-component-operator/compare/v0.1.0-3...v0.1.0
-[v0.1.0-3]: https://github.com/epam/edp-component-operator/compare/v0.0.1-2...v0.1.0-3
