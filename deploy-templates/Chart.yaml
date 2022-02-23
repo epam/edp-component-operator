@@ -40,6 +40,7 @@ annotations:
         visible: true
     - apiVersion: v1.edp.epam.com/v1alpha1
       kind: EDPComponent
+      metadata:
         name: edp-admin-console
       spec:
         icon: hash
@@ -57,6 +58,7 @@ annotations:
         visible: true
     - apiVersion: v1.edp.epam.com/v1alpha1
       kind: EDPComponent
+      metadata:
         name: gerrit
       spec:
         icon: hash
