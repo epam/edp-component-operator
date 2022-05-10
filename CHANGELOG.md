@@ -7,6 +7,7 @@
 - Populate chart with Artifacthub annotations [EPMDEDP-8049](https://jiraeu.epam.com/browse/EPMDEDP-8049)
 - Update changelog [EPMDEDP-8227](https://jiraeu.epam.com/browse/EPMDEDP-8227)
 - Update current development version [EPMDEDP-8468](https://jiraeu.epam.com/browse/EPMDEDP-8468)
+- Fix artifacthub crdsExamples tags [EPMDEDP-8471](https://jiraeu.epam.com/browse/EPMDEDP-8471)
 
 ### Features
 
