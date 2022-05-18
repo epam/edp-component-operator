@@ -2,15 +2,17 @@ package client
 
 import (
 	"context"
-	"github.com/epam/edp-component-operator/pkg/apis/v1/v1alpha1"
+
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
+
+	apiV1 "github.com/epam/edp-component-operator/pkg/apis/v1/v1"
 )
 
 type EDPComponentInterface interface {
-	Create(*v1alpha1.EDPComponent) (*v1alpha1.EDPComponent, error)
-	Get(name string, options metav1.GetOptions) (*v1alpha1.EDPComponent, error)
+	Create(*apiV1.EDPComponent) (*apiV1.EDPComponent, error)
+	Get(name string, options metav1.GetOptions) (*apiV1.EDPComponent, error)
 }
 
 type edpComponents struct {
@@ -25,8 +27,8 @@ func newEdpComponents(c *EDPComponentV1Client, namespace string) *edpComponents 
 	}
 }
 
-func (e edpComponents) Create(c *v1alpha1.EDPComponent) (res *v1alpha1.EDPComponent, err error) {
-	res = &v1alpha1.EDPComponent{}
+func (e edpComponents) Create(c *apiV1.EDPComponent) (res *apiV1.EDPComponent, err error) {
+	res = &apiV1.EDPComponent{}
 	err = e.client.Post().
 		Namespace(e.ns).
 		Resource("edpcomponents").
@@ -36,8 +38,8 @@ func (e edpComponents) Create(c *v1alpha1.EDPComponent) (res *v1alpha1.EDPCompon
 	return
 }
 
-func (e edpComponents) Get(name string, options metav1.GetOptions) (res *v1alpha1.EDPComponent, err error) {
-	res = &v1alpha1.EDPComponent{}
+func (e edpComponents) Get(name string, options metav1.GetOptions) (res *apiV1.EDPComponent, err error) {
+	res = &apiV1.EDPComponent{}
 	err = e.client.Get().
 		Namespace(e.ns).
 		Resource("edpcomponents").

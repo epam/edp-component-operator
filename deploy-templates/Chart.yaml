@@ -29,7 +29,7 @@ annotations:
       displayName: EDPComponent
       description: Manages components of the EDP platform
   artifacthub.io/crdsExamples: |
-    - apiVersion: v1.edp.epam.com/v1alpha1
+    - apiVersion: v1.edp.epam.com/v1
       kind: EDPComponent
       metadata:
         name: docker-registry
@@ -38,7 +38,7 @@ annotations:
         type: docker-registry
         url: docker.io
         visible: true
-    - apiVersion: v1.edp.epam.com/v1alpha1
+    - apiVersion: v1.edp.epam.com/v1
       kind: EDPComponent
       metadata:
         name: edp-admin-console
@@ -47,7 +47,7 @@ annotations:
         type: admin-console
         url: https://edp-admin-console.example.com
         visible: true
-    - apiVersion: v1.edp.epam.com/v1alpha1
+    - apiVersion: v1.edp.epam.com/v1
       kind: EDPComponent
       metadata:
         name: test-jira
@@ -56,7 +56,7 @@ annotations:
         type: jira
         url: https://jiraeu.example.com
         visible: true
-    - apiVersion: v1.edp.epam.com/v1alpha1
+    - apiVersion: v1.edp.epam.com/v1
       kind: EDPComponent
       metadata:
         name: gerrit

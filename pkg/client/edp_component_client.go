@@ -1,15 +1,16 @@
 package client
 
 import (
-	"github.com/epam/edp-component-operator/pkg/apis/v1/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"k8s.io/client-go/rest"
+
+	apiV1 "github.com/epam/edp-component-operator/pkg/apis/v1/v1"
 )
 
-var SchemeGroupVersion = schema.GroupVersion{Group: "v1.edp.epam.com", Version: "v1alpha1"}
+var SchemeGroupVersion = schema.GroupVersion{Group: "v1.edp.epam.com", Version: "v1"}
 
 type EDPComponentV1Client struct {
 	restClient *rest.RESTClient
@@ -45,8 +46,8 @@ func setConfigDefault(cfg *rest.Config) error {
 
 func addKnownTypes(scheme *runtime.Scheme) error {
 	scheme.AddKnownTypes(SchemeGroupVersion,
-		&v1alpha1.EDPComponent{},
-		&v1alpha1.EDPComponentList{},
+		&apiV1.EDPComponent{},
+		&apiV1.EDPComponentList{},
 	)
 	metav1.AddToGroupVersion(scheme, SchemeGroupVersion)
 	return nil

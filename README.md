@@ -15,7 +15,7 @@ _**NOTE:** Operator is platform-independent, that is why there is a unified inst
 
 Additionally, there is the ability to use the custom components and afterwards consume the respective component data from Admin Console.
 
-The basic Custom Resource for EDP Component can be as follows ([edp_components_crd.yaml](deploy-templates/crds/v1.edp.epam.com_edpcomponents_crd.yaml)):
+The basic Custom Resource for EDP Component can be as follows ([edp_components_crd.yaml](deploy-templates/crds/v1.edp.epam.com_edpcomponents.yaml)):
 
 ```yaml
 apiVersion: v1.edp.epam.com/v1alpha1
