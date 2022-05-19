@@ -3,7 +3,7 @@ package client
 import (
 	"context"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
 
@@ -12,7 +12,7 @@ import (
 
 type EDPComponentInterface interface {
 	Create(*apiV1.EDPComponent) (*apiV1.EDPComponent, error)
-	Get(name string, options metav1.GetOptions) (*apiV1.EDPComponent, error)
+	Get(name string, options metaV1.GetOptions) (*apiV1.EDPComponent, error)
 }
 
 type edpComponents struct {
@@ -38,7 +38,7 @@ func (e edpComponents) Create(c *apiV1.EDPComponent) (res *apiV1.EDPComponent, e
 	return
 }
 
-func (e edpComponents) Get(name string, options metav1.GetOptions) (res *apiV1.EDPComponent, err error) {
+func (e edpComponents) Get(name string, options metaV1.GetOptions) (res *apiV1.EDPComponent, err error) {
 	res = &apiV1.EDPComponent{}
 	err = e.client.Get().
 		Namespace(e.ns).

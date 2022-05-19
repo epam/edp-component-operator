@@ -1,7 +1,7 @@
 package client
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
@@ -49,6 +49,6 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 		&apiV1.EDPComponent{},
 		&apiV1.EDPComponentList{},
 	)
-	metav1.AddToGroupVersion(scheme, SchemeGroupVersion)
+	metaV1.AddToGroupVersion(scheme, SchemeGroupVersion)
 	return nil
 }

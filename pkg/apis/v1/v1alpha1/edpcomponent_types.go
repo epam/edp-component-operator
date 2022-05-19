@@ -1,7 +1,7 @@
 package v1alpha1
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	metaV1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
@@ -36,8 +36,8 @@ type EDPComponentStatus struct {
 
 // EDPComponent is the Schema for the edpcomponents API
 type EDPComponent struct {
-	metav1.TypeMeta   `json:",inline"`
-	metav1.ObjectMeta `json:"metadata,omitempty"`
+	metaV1.TypeMeta   `json:",inline"`
+	metaV1.ObjectMeta `json:"metadata,omitempty"`
 
 	Spec   EDPComponentSpec   `json:"spec,omitempty"`
 	Status EDPComponentStatus `json:"status,omitempty"`
@@ -47,8 +47,8 @@ type EDPComponent struct {
 
 // EDPComponentList contains a list of EDPComponent
 type EDPComponentList struct {
-	metav1.TypeMeta `json:",inline"`
-	metav1.ListMeta `json:"metadata,omitempty"`
+	metaV1.TypeMeta `json:",inline"`
+	metaV1.ListMeta `json:"metadata,omitempty"`
 	Items           []EDPComponent `json:"items"`
 }
 
