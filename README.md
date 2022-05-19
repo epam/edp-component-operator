@@ -18,7 +18,7 @@ Additionally, there is the ability to use the custom components and afterwards c
 The basic Custom Resource for EDP Component can be as follows ([edp_components_crd.yaml](deploy-templates/crds/v1.edp.epam.com_edpcomponents.yaml)):
 
 ```yaml
-apiVersion: v1.edp.epam.com/v1alpha1
+apiVersion: v1.edp.epam.com/v1
 kind: EDPComponent
 metadata:
   name: example-edpcomponent

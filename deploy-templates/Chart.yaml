@@ -24,7 +24,7 @@ annotations:
   artifacthub.io/operatorCapabilities: Full Lifecycle
   artifacthub.io/crds: |
     - kind: EDPComponent
-      version: v1.edp.epam.com/v1alpha1
+      version: v1.edp.epam.com/v1
       name: edpcomponent
       displayName: EDPComponent
       description: Manages components of the EDP platform

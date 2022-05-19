@@ -5,7 +5,7 @@ import (
 	"os"
 
 	buildInfo "github.com/epam/edp-common/pkg/config"
-	"github.com/epam/edp-component-operator/pkg/apis/v1/v1alpha1"
+	apiV1 "github.com/epam/edp-component-operator/pkg/apis/v1/v1"
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/client-go/rest"
 
@@ -31,7 +31,7 @@ var (
 func init() {
 	utilruntime.Must(clientgoscheme.AddToScheme(scheme))
 
-	utilruntime.Must(v1alpha1.AddToScheme(scheme))
+	utilruntime.Must(apiV1.AddToScheme(scheme))
 }
 
 func main() {
