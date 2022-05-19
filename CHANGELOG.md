@@ -8,16 +8,20 @@
 - Update changelog [EPMDEDP-8227](https://jiraeu.epam.com/browse/EPMDEDP-8227)
 - Update current development version [EPMDEDP-8468](https://jiraeu.epam.com/browse/EPMDEDP-8468)
 - Fix artifacthub crdsExamples tags [EPMDEDP-8471](https://jiraeu.epam.com/browse/EPMDEDP-8471)
+- Update current development version [EPMDEDP-8832](https://jiraeu.epam.com/browse/EPMDEDP-8832)
+- Update changelog [EPMDEDP-9185](https://jiraeu.epam.com/browse/EPMDEDP-9185)
 
 ### Features
 
 - Update Makefile changelog target [EPMDEDP-8218](https://jiraeu.epam.com/browse/EPMDEDP-8218)
 - Generate CRDs and helm docs automatically [EPMDEDP-8385](https://jiraeu.epam.com/browse/EPMDEDP-8385)
+- Migrate to CRDs to apiextensions v1 [EPMDEDP-9217](https://jiraeu.epam.com/browse/EPMDEDP-9217)
 
 ### Bug Fixes
 
 - Fix artifacthub.io crds tag [EPMDEDP-8386](https://jiraeu.epam.com/browse/EPMDEDP-8386)
 - Fix changelog generation in GH Release Action [EPMDEDP-8468](https://jiraeu.epam.com/browse/EPMDEDP-8468)
+- Make sure we ignore generated files for Sonarqube check [EPMDEDP-9217](https://jiraeu.epam.com/browse/EPMDEDP-9217)
 
 ### Code Refactoring
 
