@@ -1,6 +1,9 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+
+<a name="v0.11.0"></a>
+## [v0.11.0] - 2022-05-10
 ### Routine
 
 - Update release CI pipelines [EPMDEDP-7847](https://jiraeu.epam.com/browse/EPMDEDP-7847)
@@ -8,6 +11,7 @@
 - Update changelog [EPMDEDP-8227](https://jiraeu.epam.com/browse/EPMDEDP-8227)
 - Update current development version [EPMDEDP-8468](https://jiraeu.epam.com/browse/EPMDEDP-8468)
 - Fix artifacthub crdsExamples tags [EPMDEDP-8471](https://jiraeu.epam.com/browse/EPMDEDP-8471)
+- Update changelog [EPMDEDP-9185](https://jiraeu.epam.com/browse/EPMDEDP-9185)
 
 ### Features
 
@@ -54,7 +58,8 @@
 <a name="v0.7.0"></a>
 ## [v0.7.0] - 2021-12-03
 
-[Unreleased]: https://github.com/epam/edp-component-operator/compare/v0.10.0...HEAD
+[Unreleased]: https://github.com/epam/edp-component-operator/compare/v0.11.0...HEAD
+[v0.11.0]: https://github.com/epam/edp-component-operator/compare/v0.10.0...v0.11.0
 [v0.10.0]: https://github.com/epam/edp-component-operator/compare/v0.9.0...v0.10.0
 [v0.9.0]: https://github.com/epam/edp-component-operator/compare/v0.8.0...v0.9.0
 [v0.8.0]: https://github.com/epam/edp-component-operator/compare/v0.7.0...v0.8.0
