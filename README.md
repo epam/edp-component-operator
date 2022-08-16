@@ -49,27 +49,30 @@ In order to install the EDP Component Operator, follow the steps below:
 
 1. To add the Helm EPAMEDP Charts for local client, run "helm repo add":
      ```bash
-     helm repo add epamedp https://chartmuseum.demo.edp-epam.com/
+     helm repo add epamedp https://epam.github.io/edp-helm-charts/stable
      ```
 2. Choose available Helm chart version:
      ```bash
-     helm search repo epamedp/edp-component-operator
+     helm search repo epamedp/edp-component-operator -l
      NAME                            CHART VERSION   APP VERSION     DESCRIPTION
-     epamedp/edp-component-operator  0.5.0
+     epamedp/edp-component-operator  0.11.0          0.11.0          A Helm chart for EDP Component Operator
+     epamedp/edp-component-operator  0.10.0          0.10.0          A Helm chart for EDP Component Operator
      ```
 
     _**NOTE:** It is highly recommended to use the latest released version._
 
 3. Deploy operator:
 
-Install operator in the <edp_cicd_project> namespace with the helm command; find below the installation command example:
+Install operator in the <edp-project> namespace with the helm command; find below the installation command example:
 ```bash
 helm install edp-component-operator epamedp/edp-component-operator --version <chart_version>
 ```
 
 ## Local Development
 
-In order to develop the operator, first set up a local environment. For details, please refer to the [Local Development](documentation/local_development.md) page.
+In order to develop the operator, first set up a local environment. For details, please refer to the [Local Development](https://epam.github.io/edp-install/developer-guide/local-development/) page.
+
+Development versions are also available, please refer to the [snapshot helm chart repository](https://epam.github.io/edp-helm-charts/snapshot/) page.
 
 ### Related Articles
 
