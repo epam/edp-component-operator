@@ -1,16 +1,27 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+
+<a name="v0.12.0"></a>
+## [v0.12.0] - 2022-08-26
 ### Routine
 
+- Upgrade go version to 1.18 [EPMDEDP-10110](https://jiraeu.epam.com/browse/EPMDEDP-10110)
+- Fix Jira Ticket pattern for changelog generator [EPMDEDP-10159](https://jiraeu.epam.com/browse/EPMDEDP-10159)
+- Update helm-docs version [EPMDEDP-10280](https://jiraeu.epam.com/browse/EPMDEDP-10280)
+- Change 'go get' to 'go install' for git-chglog [EPMDEDP-10337](https://jiraeu.epam.com/browse/EPMDEDP-10337)
+- Remove VERSION file [EPMDEDP-10387](https://jiraeu.epam.com/browse/EPMDEDP-10387)
+- Add gcflags for go build artifact [EPMDEDP-10411](https://jiraeu.epam.com/browse/EPMDEDP-10411)
 - Update current development version [EPMDEDP-8832](https://jiraeu.epam.com/browse/EPMDEDP-8832)
 
 ### Documentation
 
+- Align README.md [EPMDEDP-10274](https://jiraeu.epam.com/browse/EPMDEDP-10274)
 - Change documentation to v1 [EPMDEDP-9217](https://jiraeu.epam.com/browse/EPMDEDP-9217)
 
 ### Features
 
+- Download required tools for Makefile targets [EPMDEDP-10105](https://jiraeu.epam.com/browse/EPMDEDP-10105)
 - Migrate to CRDs to apiextensions v1 [EPMDEDP-9217](https://jiraeu.epam.com/browse/EPMDEDP-9217)
 
 ### Bug Fixes
@@ -74,7 +85,8 @@
 <a name="v0.7.0"></a>
 ## [v0.7.0] - 2021-12-03
 
-[Unreleased]: https://github.com/epam/edp-component-operator/compare/v0.11.0...HEAD
+[Unreleased]: https://github.com/epam/edp-component-operator/compare/v0.12.0...HEAD
+[v0.12.0]: https://github.com/epam/edp-component-operator/compare/v0.11.0...v0.12.0
 [v0.11.0]: https://github.com/epam/edp-component-operator/compare/v0.10.0...v0.11.0
 [v0.10.0]: https://github.com/epam/edp-component-operator/compare/v0.9.0...v0.10.0
 [v0.9.0]: https://github.com/epam/edp-component-operator/compare/v0.8.0...v0.9.0
