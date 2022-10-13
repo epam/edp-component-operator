@@ -35,6 +35,7 @@ func (e edpComponents) Create(c *apiV1.EDPComponent) (res *apiV1.EDPComponent, e
 		Body(c).
 		Do(context.TODO()).
 		Into(res)
+
 	return
 }
 
@@ -47,5 +48,6 @@ func (e edpComponents) Get(name string, options metaV1.GetOptions) (res *apiV1.E
 		VersionedParams(&options, scheme.ParameterCodec).
 		Do(context.TODO()).
 		Into(res)
+
 	return
 }

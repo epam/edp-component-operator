@@ -6,7 +6,7 @@ import (
 
 // NOTE: json tags are required.  Any new fields you add must have json tags for the fields to be serialized.
 
-// EDPComponentSpec defines the desired state of EDPComponent
+// EDPComponentSpec defines the desired state of EDPComponent.
 type EDPComponentSpec struct {
 	// specifies a type of component, e.g. 'nexus', 'gerrit', etc.
 	// +optional
@@ -25,7 +25,7 @@ type EDPComponentSpec struct {
 	Visible bool `json:"visible,omitempty"`
 }
 
-// EDPComponentStatus defines the observed state of EDPComponent
+// EDPComponentStatus defines the observed state of EDPComponent.
 type EDPComponentStatus struct {
 }
 
@@ -34,7 +34,7 @@ type EDPComponentStatus struct {
 // +kubebuilder:deprecatedversion
 // +kubebuilder:resource:path=edpcomponents,scope=Namespaced
 
-// EDPComponent is the Schema for the edpcomponents API
+// EDPComponent is the Schema for the edpcomponents API.
 type EDPComponent struct {
 	metaV1.TypeMeta   `json:",inline"`
 	metaV1.ObjectMeta `json:"metadata,omitempty"`
@@ -45,7 +45,7 @@ type EDPComponent struct {
 
 // +kubebuilder:object:root=true
 
-// EDPComponentList contains a list of EDPComponent
+// EDPComponentList contains a list of EDPComponent.
 type EDPComponentList struct {
 	metaV1.TypeMeta `json:",inline"`
 	metaV1.ListMeta `json:"metadata,omitempty"`

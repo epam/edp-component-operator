@@ -55,8 +55,9 @@ fmt:  ## Run go fmt
 vet:  ## Run go vet
 	go vet ./...
 
-lint: ## Run go lint
-	exit 0
+.PHONY: lint
+lint: golangci-lint ## Run go lint
+	${GOLANGCILINT} run -v -c .golangci.yaml ./...
 
 ##@ Build
 
@@ -84,6 +85,12 @@ api-docs: crdoc	## generate CRD docs
 .PHONY: helm-docs
 helm-docs: helmdocs	## generate helm docs
 	$(HELMDOCS)
+
+GOLANGCILINT = ${CURRENT_DIR}/bin/golangci-lint
+.PHONY: golangci-lint
+golangci-lint: ## Download golangci-lint locally if necessary.
+	$(call go-get-tool,$(GOLANGCILINT),github.com/golangci/golangci-lint/cmd/golangci-lint,v1.50.0)
+
 
 HELMDOCS = ${CURRENT_DIR}/bin/helm-docs
 .PHONY: helmdocs
