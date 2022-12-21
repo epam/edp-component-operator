@@ -9,7 +9,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/serializer"
 	"k8s.io/client-go/rest"
 
-	apiV1 "github.com/epam/edp-component-operator/pkg/apis/v1/v1"
+	apiV1 "github.com/epam/edp-component-operator/api/v1/v1"
 )
 
 var SchemeGroupVersion = schema.GroupVersion{Group: "v1.edp.epam.com", Version: "v1"}

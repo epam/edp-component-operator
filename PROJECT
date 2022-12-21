@@ -1,0 +1,17 @@
+domain: edp.epam.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: edp-component-operator
+repo: github.com/epam/edp-component-operator
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: edp.epam.com
+  group: v1
+  kind: EDPComponent
+  path: github.com/epam/edp-component-operator/api/v1
+  version: v1
+version: "3"

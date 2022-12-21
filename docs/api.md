@@ -22,7 +22,7 @@ Resource Types:
 
 
 
-EDPComponent is the Schema for the edpcomponents API
+EDPComponent is the Schema for the edpcomponents API.
 
 <table>
     <thead>
@@ -54,14 +54,14 @@ EDPComponent is the Schema for the edpcomponents API
         <td><b><a href="#edpcomponentspec">spec</a></b></td>
         <td>object</td>
         <td>
-          EDPComponentSpec defines the desired state of EDPComponent<br/>
+          EDPComponentSpec defines the desired state of EDPComponent.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>status</b></td>
         <td>object</td>
         <td>
-          EDPComponentStatus defines the observed state of EDPComponent<br/>
+          EDPComponentStatus defines the observed state of EDPComponent.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -73,7 +73,7 @@ EDPComponent is the Schema for the edpcomponents API
 
 
 
-EDPComponentSpec defines the desired state of EDPComponent
+EDPComponentSpec defines the desired state of EDPComponent.
 
 <table>
     <thead>
@@ -132,7 +132,7 @@ Resource Types:
 
 
 
-EDPComponent is the Schema for the edpcomponents API
+EDPComponent is the Schema for the edpcomponents API.
 
 <table>
     <thead>
@@ -164,14 +164,14 @@ EDPComponent is the Schema for the edpcomponents API
         <td><b><a href="#edpcomponentspec-1">spec</a></b></td>
         <td>object</td>
         <td>
-          EDPComponentSpec defines the desired state of EDPComponent<br/>
+          EDPComponentSpec defines the desired state of EDPComponent.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>status</b></td>
         <td>object</td>
         <td>
-          EDPComponentStatus defines the observed state of EDPComponent<br/>
+          EDPComponentStatus defines the observed state of EDPComponent.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -183,7 +183,7 @@ EDPComponent is the Schema for the edpcomponents API
 
 
 
-EDPComponentSpec defines the desired state of EDPComponent
+EDPComponentSpec defines the desired state of EDPComponent.
 
 <table>
     <thead>
