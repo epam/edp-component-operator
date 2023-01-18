@@ -7,7 +7,7 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/rest"
 
-	apiV1 "github.com/epam/edp-component-operator/api/v1/v1"
+	apiV1 "github.com/epam/edp-component-operator/api/v1"
 )
 
 type EDPComponentInterface interface {

@@ -20,7 +20,7 @@ import (
 
 	buildInfo "github.com/epam/edp-common/pkg/config"
 
-	apiV1 "github.com/epam/edp-component-operator/api/v1/v1"
+	apiV1 "github.com/epam/edp-component-operator/api/v1"
 )
 
 var (
