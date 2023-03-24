@@ -1,10 +1,15 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+
+<a name="v0.13.0"></a>
+## [v0.13.0] - 2023-03-13
 ### Routine
 
 - Update current development version [EPMDEDP-10274](https://jiraeu.epam.com/browse/EPMDEDP-10274)
 - Updated dependencies [EPMDEDP-11206](https://jiraeu.epam.com/browse/EPMDEDP-11206)
+- Update git-chglog for edp-component-operator [EPMDEDP-11518](https://jiraeu.epam.com/browse/EPMDEDP-11518)
+- Bump golang.org/x/net from 0.5.0 to 0.8.0 [EPMDEDP-11578](https://jiraeu.epam.com/browse/EPMDEDP-11578)
 
 ### Features
 
@@ -74,8 +79,8 @@
 ### Routine
 
 - Update openssh-client version [EPMDEDP-7469](https://jiraeu.epam.com/browse/EPMDEDP-7469)
-- Align to release process [EPMDEDP-7847](https://jiraeu.epam.com/browse/EPMDEDP-7847)
 - Add changelog generator [EPMDEDP-7847](https://jiraeu.epam.com/browse/EPMDEDP-7847)
+- Align to release process [EPMDEDP-7847](https://jiraeu.epam.com/browse/EPMDEDP-7847)
 - Add codecov report [EPMDEDP-7885](https://jiraeu.epam.com/browse/EPMDEDP-7885)
 - Update docker image [EPMDEDP-7895](https://jiraeu.epam.com/browse/EPMDEDP-7895)
 - Use custom go build step for operator [EPMDEDP-7932](https://jiraeu.epam.com/browse/EPMDEDP-7932)
@@ -108,7 +113,8 @@
 <a name="v0.0.1-2"></a>
 ## v0.0.1-2 - 2019-10-30
 
-[Unreleased]: https://github.com/epam/edp-component-operator/compare/v0.12.0...HEAD
+[Unreleased]: https://github.com/epam/edp-component-operator/compare/v0.13.0...HEAD
+[v0.13.0]: https://github.com/epam/edp-component-operator/compare/v0.12.0...v0.13.0
 [v0.12.0]: https://github.com/epam/edp-component-operator/compare/v0.11.0...v0.12.0
 [v0.11.0]: https://github.com/epam/edp-component-operator/compare/v0.10.0...v0.11.0
 [v0.10.0]: https://github.com/epam/edp-component-operator/compare/v0.9.0...v0.10.0
