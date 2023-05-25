@@ -1,6 +1,11 @@
 <a name="unreleased"></a>
 ## [Unreleased]
 
+### Routine
+
+- Update current development version [EPMDEDP-11472](https://jiraeu.epam.com/browse/EPMDEDP-11472)
+- Add templates for github issues [EPMDEDP-11928](https://jiraeu.epam.com/browse/EPMDEDP-11928)
+
 
 <a name="v0.13.0"></a>
 ## [v0.13.0] - 2023-03-24
